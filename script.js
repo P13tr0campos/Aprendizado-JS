@@ -37,11 +37,11 @@ async function mostracaminho(partescor) {
     pontoEl.innerText = pontuacao;
     for (let cor of partescor) {
         const corAgora = document.querySelector(`.${cor}`);
-        await delay(400);
+        await delay(100);
         corAgora.style.backgroundColor = objcor[cor].new;
-        await delay(600);
+        await delay(200);
         corAgora.style.backgroundColor = objcor[cor].current;
-        await delay(600);
+        await delay(200);
     }
     ehGeracaocaminho = false;
 }
