@@ -9,13 +9,31 @@
     height: 600px;
     width: 600px;
     position: absolute;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
     top: 50%;
     bottom: 50%;
     left: 50%;
     right: 50%;
     border: aliceblue;
     border-radius: 8px;
+}
+.resultado{
+    padding-bottom: 5%;
+    position: absolute;
+    transform: translate(-10%, -50%);
+    top: -6%;
+    right: 20%;
+    background-color: aquamarine;
+    border-radius: 16px;
+    border: 1px rgb(0, 0, 0) solid;
+    width: 50%;
+
+}
+.rponto{
+    font-size: 24px;
+    padding: 1,5%;
+    text-align: center;
+    background-color: aquamarine;
 }
 .Jogo{
     width: 500px;
@@ -36,10 +54,10 @@
     cursor: pointer;
 }
 .cor1{
-background-color: #006400;
-border-radius: 10px;
-bottom: 30px;
-left: 30px;
+    background-color: #006400;
+    border-radius: 10px;
+    bottom: 30px;
+    left: 30px;
 }
 .cor2{
  background-color: #800008;
@@ -101,13 +119,24 @@ left: 30px;
     display: none;
 }
 .container button{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 10px 20px;
     font-size: 24px;
     cursor: pointer;
     align-items:center ;
-    border-radius: 16px;
+    border-radius: 20px;
     margin-top: 40%;
+    transition: 2s;
+}
+.botao{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px 20px;
+    background:  white;
+}
+.botao:hover{
+    padding: 20px 30px;
+    background:  rgba(0, 255, 8, 0.397);
+
 }
 .container p{
     font-weight: 600;
