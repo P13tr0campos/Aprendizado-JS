@@ -37,7 +37,7 @@ async function mostracaminho(partescor) {
     pontoEl.innerText = pontuacao;
     for (let cor of partescor) {
         const corAgora = document.querySelector(`.${cor}`);
-        await delay(100);
+        await delay(150);
         corAgora.style.backgroundColor = objcor[cor].new;
         await delay(200);
         corAgora.style.backgroundColor = objcor[cor].current;
@@ -47,7 +47,7 @@ async function mostracaminho(partescor) {
 }
 
 function fimdejogo() {
-    pontoresult.innerHTML = `<span>Seu resultado foi: </span> ${pontuacao}`;
+    pontoresult.innerHTML = `<span>Sua pontuação foi: </span> ${pontuacao}`;
     pontoresult.classList.remove("hide");
     container.classList.remove("hide");
     wrapperEl.classList.add("hide");
@@ -71,7 +71,7 @@ async function correcebeclique(e) {
     }
     if (e.target.classList.contains(coraleatoria[contaclique])) {
         e.target.style.backgroundColor = objcor[coraleatoria[contaclique]].new;
-        await delay(400);
+        await delay(50);
         e.target.style.backgroundColor = objcor[coraleatoria[contaclique]].current;
         contaclique++;
         if (contaclique === pontuacao) {
